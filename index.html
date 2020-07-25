@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Shuffle and Sort</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Shuffle and Sort</h1>
+            </div>    
+            <div class="main-section">
+                <div class="row">
+                    <div class="col left-col">
+                        <div class="row cards-container" id="cardContainer"></div>
+                    </div>    
+                    <div class="col right-col">
+                        <button class="btn btn-blue" onclick="shuffleHandler()" id="shuffleBtn">Shuffle</button>
+                        <button class="btn btn-blue" onclick="sortHandler()" id="sortBtn">Sort</button>
+                    </div>    
+                </div>
+            </div>
+            <div class="footer fixed-bottom">
+                <p>Shuffle and sort by Rahul Ghosh</p>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+div {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header {
+    padding: 20px 0 10px;
+    text-align: center;
+    color: #333;
+    border-bottom: 3px solid #bfbfbf;
+}
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer {
+    margin: 10px 0 0;
+    text-align: center;
+}
+.footer p {
+    color: #333;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.col {
+    position: relative;
+    width: 100%;
+}
+.card {
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 600;
+    color: #fff;
+}
+.card.color-scheme-1{
+    background: #6f98a8;
+    border-color: #6f98a8;
+}
+.card.color-scheme-2{
+    background: #2b8ead;
+    border-color: #2b8ead;
+}
+.card.color-scheme-3{
+    background: #2f454e;
+    border-color: #2f454e;
+}
+.card.color-scheme-4{
+    background: #bfbfbf;
+    border-color: #bfbfbf;
+}
+.right-col {
+    background: #EFEFEF;
+    padding: 20px;
+    text-align: center;
+}
+.btn {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn.btn-blue {
+    background: #72C3DC;
+    color: #fff;
+    box-shadow: 0 5px 2px #2b8ead;
+}
+.btn.btn-blue:hover {
+    background: #62b1c9;
+}
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+@media (min-width: 768px) {
+    .left-col {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .right-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .card {
+        width: 33.33333333%;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .header {
+        background: #333;
+        color: #fff;
+        font-size: 20px;
+        border: 0;
+    }
+    .left-col {
+        order: 2;
+        padding: 0 15px;
+    }
+    .right-col {
+        order: 1;
+        background: none;
+    }
+    .card {
+        width: 100%;
+        background: #efefef !important;
+        border-left: 5px solid transparent;
+        margin: 0 0 5px;
+        padding: 10px 0;
+        height: auto;
+        color: #333;
+        font-size: 18px;
+    }
+    .btn {
+        width: 38%;
+        margin: 0;
+    }
+}
